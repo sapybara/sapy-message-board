@@ -1,0 +1,38 @@
+<!-- ================= Firebase Scripts ================= -->
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+
+<!-- ================= HTML Content ================= -->
+<h1>Some infinities are bigger than others</h1>
+<p>Capybara's have comb-like hairs, I'm just telling.</p>
+
+<h1>Register</h1>
+<input type="email" id="regEmail" placeholder="Email">
+<input type="password" id="regPassword" placeholder="Password">
+<button onclick="registerUser()">Register</button>
+
+<h1>Login</h1>
+<input type="email" id="loginEmail" placeholder="Email">
+<input type="password" id="loginPassword" placeholder="Password">
+<button onclick="loginUser()">Login</button>
+
+<h1>Drop a Message</h1>
+<form id="messageForm" onsubmit="sendMessage(); return false;">
+  <input type="text" id="to" placeholder="To (optional)">
+  <input type="text" id="from" placeholder="From (optional)">
+  <textarea id="message" placeholder="Your message here"></textarea>
+  <button type="submit">Send</button>
+</form>
+
+<h2>Message Board</h2>
+
+<!-- 🔥 SCROLLABLE MESSAGE CONTAINER -->
+<div id="messageBoardContainer">
+  <div id="messageBoard"></div>
+</div>
+
+<!-- 🔥 FIXED VISITOR COUNTER -->
+<div id="visitorFooter">
+  Total Visitors: <span id="visitorCount">Loading...</span>
+</div>

@@ -1,2 +1,2 @@
-Live demo on CodePen:
+y'all should check this 
 https://codepen.io/sapybara/pen/MYKVQey
